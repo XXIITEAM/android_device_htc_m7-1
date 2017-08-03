@@ -32,3 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
         ro.ota.romname=AIM-ROM \
         ro.ota.version=$(shell date +"%Y%m%d") \
         ro.ota.manifest=https://raw.githubusercontent.com/AIMROM/OFFICIAL_DEVICES/N/"m7".xml
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += /
+ ro.aim.maintainer=Ali Al-Asadi (alial04)
