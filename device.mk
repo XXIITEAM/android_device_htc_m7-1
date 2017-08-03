@@ -26,3 +26,9 @@ $(call inherit-product, device/htc/m7-common/m7-common.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/htc/m7/overlay
+
+# AIM
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.ota.romname=AIM-ROM \
+        ro.ota.version=$(shell date +"%Y%m%d") \
+        ro.ota.manifest=https://raw.githubusercontent.com/AIMROM/OFFICIAL_DEVICES/N/"m7".xml
